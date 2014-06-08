@@ -1,0 +1,12 @@
+{
+    "require": {
+        "phpunit/phpunit": "3.7.*",
+        "phploc/phploc": "*",
+        "pdepend/pdepend": "1.*",
+        "phpmd/phpmd": "1.4.*",
+        "squizlabs/php_codesniffer": "*",
+        "sebastian/phpcpd": "*",
+        "phpdocumentor/phpdocumentor": "2.*",
+        "fabpot/php-cs-fixer": "dev-master"
+    }
+}

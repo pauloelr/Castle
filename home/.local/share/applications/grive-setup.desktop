@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.4 beta
+Name=Grive Setup
+GenericName=Grive Setup
+X-GNOME-FullName=Grive Setup
+Comment=Google Drive Client setup using Grive and Grive Tools
+Exec=gksudo /bin/bash /opt/thefanclub/grive-tools/grive-setup
+Terminal=false
+Icon=google-drive
+Type=Application
+Categories=Utility;
+TargetEnvironment=Unity

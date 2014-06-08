@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Google Drive Indicator
+Version=1.4
+GenericName=ubuntu-amd-catalyst-install
+X-GNOME-FullName=Google Drive Indicator
+Comment=Ubuntu Google Drive Client with Grive and Grive Tools
+Type=Application
+Categories=Utility;GTK
+Path=/opt/thefanclub/grive-tools/
+Exec=/opt/thefanclub/grive-tools/grive-indicator 
+Terminal=false
+StartupNotify=true
+Icon=google-drive
+TargetEnvironment=Unity
