@@ -14,11 +14,11 @@ export BASH_IT=$HOME/.bash_it
 export BASH_IT_THEME='psyco'
 
 # Your place for hosting Git repos. I use this for private repos.
-export GIT_HOSTING='git@git.domain.com'
+export GIT_HOSTING='https://github.com/pauloelr'
 
 # Set my editor and git editor
-export EDITOR="/usr/bin/mate -w"
-export GIT_EDITOR='/usr/bin/mate -w'
+export EDITOR="/opt/sublime_text_2/sublime_text"
+export GIT_EDITOR='/opt/sublime_text_2/sublime_text'
 
 # Set the path nginx
 export NGINX_PATH='/opt/nginx'
@@ -26,13 +26,10 @@ export NGINX_PATH='/opt/nginx'
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
-
 # Change this to your console based IRC client of choice.
-
 export IRC_CLIENT='irssi'
 
 # Set this to the command you use for todo.txt-cli
-
 export TODO="t"
 
 # Set vcprompt executable path for scm advance info in prompt (demula theme)
