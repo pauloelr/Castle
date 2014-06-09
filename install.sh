@@ -13,7 +13,6 @@ chromium-browser-l10n
 compizconfig-settings-manager
 conky
 curl
-dropbox
 firefox-locale-pt
 gimp
 git-core
@@ -44,11 +43,6 @@ virtualbox
 vlc
 y-ppa-manager"
 
-REPOSITORIES_CMD="sudo add-apt-repository -y"
-for REPOSITORY in $REPOSITORIES; do
-	REPOSITORIES_CMD="$REPOSITORIES_CMD $REPOSITORY"
-done
-
 INSTALL_CMD="sudo apt-get install -y"
 for PACKAGE in $PACKAGES; do
 	INSTALL_CMD="$INSTALL_CMD $PACKAGE"
@@ -60,8 +54,10 @@ sudo apt-get update
 echo '[Install] Upgrading Packages'
 sudo apt-get dist-upgrade -y
 
-echo '[Install] Adding Repositories'
-eval $REPOSITORIES_CMD
+REPOSITORIES_CMD="sudo add-apt-repository -y"
+for REPOSITORY in $REPOSITORIES; do
+	eval "$REPOSITORIES_CMD $REPOSITORY"
+done
 
 echo '[Install] Updating Package List'
 sudo apt-get update
