@@ -1,1 +1,3 @@
-exec("bash `pwd`/enable_bashit.sh")
+current_dir = `pwd`
+current_dir = current_dir.strip
+system("bash #{current_dir}/enable_bashit.sh")
