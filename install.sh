@@ -5,13 +5,15 @@ REPOSITORIES="ppa:libreoffice/ppa ppa:numix/ppa
 ppa:thefanclub/grive-tools
 ppa:webupd8team/java
 ppa:webupd8team/sublime-text-2
-ppa:webupd8team/y-ppa-manager"
+ppa:webupd8team/y-ppa-manager
+ppa:teejee2008/ppa"
 
 PACKAGES="apache2 
 chromium-browser 
 chromium-browser-l10n
 compizconfig-settings-manager
 conky
+conky-manager
 curl
 firefox-locale-pt
 gimp

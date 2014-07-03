@@ -1,5 +1,3 @@
-[core]
-	autocrlf = true
 [user]
 	email = pauloelr@gmail.com
 	name = Paulo Eduardo

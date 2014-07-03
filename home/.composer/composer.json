@@ -6,7 +6,12 @@
         "phpmd/phpmd": "1.4.*",
         "squizlabs/php_codesniffer": "*",
         "sebastian/phpcpd": "*",
-        "phpdocumentor/phpdocumentor": "2.*",
-        "fabpot/php-cs-fixer": "dev-master"
+        "fabpot/php-cs-fixer": "dev-master",
+
+        "behat/behat": "2.4.*@stable",
+        "behat/mink": "1.4.*@stable",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-selenium2-driver": "*"
     }
 }
