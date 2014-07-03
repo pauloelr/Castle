@@ -34,6 +34,7 @@ oracle-java7-installer
 php5-cli
 php5
 php5-json
+php5-curl
 php5-xsl
 smuxi
 sublime-text
