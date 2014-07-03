@@ -1,4 +1,4 @@
-Pauloerl/Castle
+Pauloelr/Castle
 ===============
 
 My collection of dotfiles, maintained through [homesick](https://github.com/technicalpickles/homesick).
@@ -10,13 +10,13 @@ Install homesick first
 
     gem install homesick
 
-Clone the dotfiles repo
+Clone the Castle repository
 
-    homesick clone pauloelr/castle
+    homesick clone pauloelr/Castle
 
-Then symlink the dotfiles to your home directory
+Then symlink the Castle to your home directory
 
-    homesick symlink castle
+    homesick symlink Castle
 
 
 Thanks
