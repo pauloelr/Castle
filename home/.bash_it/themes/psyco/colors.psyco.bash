@@ -20,6 +20,7 @@ if tput setaf 1 &> /dev/null; then
         black=$(tput setaf 0)
         light_gray=$(tput setaf 240)
         dark_gray=$(tput setaf 235)
+        blue=$(tput setaf 27)
     else
         red=$(tput setaf 1)
         magenta=$(tput setaf 5)
@@ -32,6 +33,7 @@ if tput setaf 1 &> /dev/null; then
         black=$(tput setaf 0)
         light_gray=$(tput setaf 0 && tput dim)
         dark_gray=$(tput setaf 0 && tput dim)
+        blue=$(tput setaf 4)
     fi
     bold=$(tput bold)
     dim=$(tput dim)
@@ -55,5 +57,6 @@ else
     underline="\033[4m"
     reverse="\033[7m"
     reset="\033[m"
+    blue="\033[34m"
 fi
 
