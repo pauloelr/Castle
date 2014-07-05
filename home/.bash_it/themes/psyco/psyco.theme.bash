@@ -5,11 +5,11 @@ source "${BASH_IT}/themes/psyco/base.psyco.bash"
 source "${BASH_IT}/themes/psyco/functions.psyco.bash"
 
 ruby_format="\[${reset}${yellow}\]"
-user_name="\[${reset}${bold}${blue}\]\u"
+user_name="\[${reset}${bold}${red}\]\u"
 at_symbol="\[${reset}${bold}${light_gray}\]@"
 machine_name="\[${reset}${bold}${orange}\]\h"
 location_word="\[${reset}${bold}${light_gray}\] in "
-location_path="\[${reset}${bold}${green}\]\w"
+location_path="\[${reset}${bold}${blue}\]\w"
 user_privilege="\[${reset}${bold}${white}\]\n\$"
 input_style="\[${reset}\]"
 
