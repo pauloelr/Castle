@@ -24,9 +24,19 @@ function powerline_scm_prompt {
             fi
             SCM_PROMPT+=" ${SCM_CHAR}${tag}${SCM_BRANCH}${SCM_STATE}${SCM_GIT_BEHIND}${SCM_GIT_AHEAD}${SCM_GIT_STASH} ${SCM_THEME_PROMPT_SUFFIX}"
         fi
-        SCM_PROMPT=" ${SCM_PROMPT} "
+        SCM_PROMPT=" ${SCM_PROMPT}"
         LAST_THEME_COLOR=${SCM_THEME_PROMPT_COLOR}
     else
         SCM_PROMPT=""
+    fi
+}
+
+function command_status(){
+    exit_code=$?
+
+    if [ $exit_code != 0 ]; then
+        last_command="\[${reset}${bold}${red}\] exited $exit_code"
+    else
+        last_command="\[${reset}${bold}${green}\] success"
     fi
 }

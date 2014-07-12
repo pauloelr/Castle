@@ -13,13 +13,8 @@ location_word="\[${reset}${bold}${light_gray}\] in "
 location_path="\[${reset}${bold}${blue}\]\w"
 user_privilege="\[${reset}${bold}${white}\]\n\$"
 
-if [ $? != 0 ]; then
-	last_command="\[${reset}\]exited \[${red}\]$?"
-else
-	last_command="\[${reset}${green}\]success"
-fi
-
 function prompt_command() {
+	command_status
 	powerline_scm_prompt
     PS1="${ruby_format}$(ruby_version_prompt)${user_name}${at_symbol}${machine_name}${location_word}${location_path}${SCM_PROMPT}${last_command}${user_privilege}${input_style} "
 }
