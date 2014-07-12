@@ -6,13 +6,12 @@ source "${BASH_IT}/themes/psyco/functions.psyco.bash"
 
 input_style="\[${reset}\]"
 ruby_format="\[${reset}${yellow}\]"
-user_name="\[${reset}${bold}${blue}\]\u"
-at_symbol="\[${reset}${bo⎇ld}${light_gray}\]@"
+user_name="\[${reset}${bold}${red}\]\u"
+at_symbol="\[${reset}${bold}${light_gray}\]@"
 machine_name="\[${reset}${bold}${orange}\]\h"
 location_word="\[${reset}${bold}${light_gray}\] in "
-location_path="\[${reset}${bold}${green}\]\w"
+location_path="\[${reset}${bold}${blue}\]\w"
 user_privilege="\[${reset}${bold}${white}\]\n\$"
-last_command="$(last_command_failed)"
 
 if [ $? != 0 ]; then
 	last_command="\[${reset}\]exited \[${red}\]$?"
