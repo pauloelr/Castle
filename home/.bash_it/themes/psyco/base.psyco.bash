@@ -7,7 +7,7 @@ SCM_THEME_PROMPT_PREFIX="${reset}${bold}${light_gray}[${reset}${bold}${purple}"
 SCM_THEME_PROMPT_SUFFIX="${reset}${bold}${light_gray}]${reset}${bold}${purple}"
 
 SCM_GIT='git'
-SCM_GIT_CHAR=" "
+SCM_GIT_CHAR="⎇ "
 
 SCM_GIT_BEHIND_CHAR="↓"
 SCM_GIT_AHEAD_CHAR="↑"

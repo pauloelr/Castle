@@ -1,12 +1,17 @@
 #!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 cd ~ 
 
-REPOSITORIES="ppa:libreoffice/ppa ppa:numix/ppa
+REPOSITORIES="ppa:libreoffice/ppa
+ppa:numix/ppa
 ppa:thefanclub/grive-tools
 ppa:webupd8team/java
 ppa:webupd8team/sublime-text-2
 ppa:webupd8team/y-ppa-manager
-ppa:teejee2008/ppa"
+ppa:teejee2008/ppa
+ppa:thefanclub/grive-tools
+ppa:chris-lea/node.js"
 
 PACKAGES="apache2 
 chromium-browser 
@@ -19,6 +24,7 @@ firefox-locale-pt
 gimp
 git-core
 gnome-tweak-tool
+google-chrome
 grive
 grive-tools
 inkscape
@@ -27,6 +33,9 @@ libreoffice-help-en-gb
 libreoffice-help-pt-br
 libreoffice-l10n-en-gb
 libreoffice-l10n-pt-br
+nodejs
+nodejs-legacy
+npm
 numix-gtk-theme
 numix-icon-theme-circle
 numix-icon-theme-shine
@@ -46,6 +55,8 @@ virtualbox
 vlc
 y-ppa-manager"
 
+NPM_PACKAGES="bower"
+
 INSTALL_CMD="sudo apt-get install -y"
 for PACKAGE in $PACKAGES; do
 	INSTALL_CMD="$INSTALL_CMD $PACKAGE"
@@ -57,10 +68,13 @@ sudo apt-get update
 echo '[Install] Upgrading Packages'
 sudo apt-get dist-upgrade -y
 
+echo '[Install] Adicionando Repositórios'
 REPOSITORIES_CMD="sudo add-apt-repository -y"
 for REPOSITORY in $REPOSITORIES; do
 	eval "$REPOSITORIES_CMD $REPOSITORY"
 done
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 
 echo '[Install] Updating Package List'
 sudo apt-get update
@@ -71,29 +85,18 @@ eval $INSTALL_CMD
 echo '[Install] Reloading Bash'
 source ~/.bashrc
 
+echo '[Install] NPM Packages'
+NPM_CMD="sudo npm install -g -s"
+for NPM_PACKAGE in $NPM_PACKAGES; do
+	eval "$NPM_CMD $NPM_PACKAGE"
+done
+
 echo '[Install] Instaling Composer'
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
-echo '[Install] Instaling BashIt'
-git clone https://github.com/revans/bash-it.git ~/.bash_it
-
 echo '[Install] Instaling Homesick'
 sudo gem install homesick
 
-echo '[Install] Reloading Bash'
-source ~/.bashrc
-
-echo '[Install] Cloning Castle'
-homesick clone pauloelr/Castle
-homesick symlink Castle
-source ~/.bashrc
-homesick rc Castle
-
-echo '[Install] Composer Global Install'
-composer global install -n --prefer-source
-
-echo '[Install] Applying Changes'
-source ~/.bashrc
-
-echo '[Install] Installation Finish'
+cd $DIR
+source ./install_user.sh
