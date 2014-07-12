@@ -21,7 +21,7 @@ export GIT_HOSTING='https://github.com/pauloelr'
 
 # Set my editor and git editor
 export EDITOR="/opt/sublime_text_2/sublime_text"
-export GIT_EDITOR='/opt/sublime_text_2/sublime_text'
+export GIT_EDITOR='/usr/bin/gedit'
 
 # Set the path nginx
 export NGINX_PATH='/opt/nginx'
