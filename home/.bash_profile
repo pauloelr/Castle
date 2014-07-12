@@ -9,6 +9,10 @@ export PATH=$PATH:~/.gem/ruby/1.8/bin:/opt/nginx/sbin
 # Add composer bin directory
 export PATH=$PATH:~/.composer/vendor/bin
 
+if [ -d "~/.bin" ]; then
+	export PATH=$PATH:~/.bin
+fi
+
 # Path to the bash it configuration
 export BASH_IT=$HOME/.bash_it
 
