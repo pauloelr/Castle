@@ -18,3 +18,5 @@
     dfs = diff --cached
 [push]
 	default = simple
+[core]
+	editor = gedit
