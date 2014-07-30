@@ -24,7 +24,7 @@ firefox-locale-pt
 gimp
 git-core
 gnome-tweak-tool
-google-chrome
+google-chrome-stable
 grive
 grive-tools
 inkscape
@@ -34,8 +34,6 @@ libreoffice-help-pt-br
 libreoffice-l10n-en-gb
 libreoffice-l10n-pt-br
 nodejs
-nodejs-legacy
-npm
 numix-gtk-theme
 numix-icon-theme-circle
 numix-icon-theme-shine
