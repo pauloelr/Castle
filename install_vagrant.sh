@@ -1,12 +1,4 @@
 #!/bin/bash
-cd ~ 
-
-echo '[Install] Updating Package List'
-sudo apt-get update
-
-echo '[Install] Upgrading Packages'
-sudo apt-get dist-upgrade -y
-
 echo '[Install] Instaling BashIt'
 git clone https://github.com/revans/bash-it.git ~/.bash_it
 
@@ -17,9 +9,11 @@ echo '[Install] Cloning Castle'
 homesick clone pauloelr/Castle
 homesick symlink Castle
 source ~/.bashrc
-source ~/.enable_bashit.sh
 
-echo '[Install] Composer Global Install'
-composer global install -n --prefer-source
+echo '[Install] Change Theme'
+sed -i "s/export BASH_IT_THEME=.*/export BASH_IT_THEME='psyco_server'/" ~/.homesick/repos/Castle/home/.bash_profile
+
+echo '[Install] Enable BashIt'
+source ~/.enable_bashit.sh
 
 echo '[Install] Installation Finish'

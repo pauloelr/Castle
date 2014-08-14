@@ -35,8 +35,14 @@ function command_status(){
     exit_code=$?
 
     if [ $exit_code != 0 ]; then
-        last_command="\[${reset}${bold}${red}\] exited $exit_code"
+        last_command="\[${reset}${bold}${red}\] ✗ $exit_code"
     else
-        last_command="\[${reset}${bold}${green}\] success"
+        last_command="\[${reset}${bold}${green}\] ✓"
     fi
+}
+
+function prompt_command() {
+    command_status
+    powerline_scm_prompt
+    PS1="${ruby_format}$(ruby_version_prompt)${user_name}${at_symbol}${machine_name}${location_word}${location_path}${SCM_PROMPT}${last_command}${user_privilege}${input_style} "
 }

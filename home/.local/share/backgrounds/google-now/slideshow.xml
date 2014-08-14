@@ -9,79 +9,39 @@
   </starttime>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/BeachNight.jpg</file>
+    <file>.local/share/backgrounds/google-now/BeachNight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/BeachNight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/BeachDawn.jpg</to>
+    <from>.local/share/backgrounds/google-now/BeachNight.jpg</from>
+    <to>.local/share/backgrounds/google-now/BeachDawn.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/BeachDawn.jpg</file>
+    <file>.local/share/backgrounds/google-now/BeachDawn.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/BeachDawn.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/BeachDaylight.jpg</to>
+    <from>.local/share/backgrounds/google-now/BeachDawn.jpg</from>
+    <to>.local/share/backgrounds/google-now/BeachDaylight.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/BeachDaylight.jpg</file>
+    <file>.local/share/backgrounds/google-now/BeachDaylight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/BeachDaylight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/BeachTwilight.jpg</to>
+    <from>.local/share/backgrounds/google-now/BeachDaylight.jpg</from>
+    <to>.local/share/backgrounds/google-now/BeachTwilight.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/BeachTwilight.jpg</file>
+    <file>.local/share/backgrounds/google-now/BeachTwilight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/BeachTwilight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/LakeNight.jpg</to>
-  </transition>
-
-
-
-
-  <static>
-    <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/LakeNight.jpg</file>
-  </static>
-  <transition>
-    <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/LakeNight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/LakeDawn.jpg</to>
-  </transition>
-  <static>
-    <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/LakeDawn.jpg</file>
-  </static>
-  <transition>
-    <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/LakeDawn.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/LakeDaylight.jpg</to>
-  </transition>
-  <static>
-    <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/LakeDaylight.jpg</file>
-  </static>
-  <transition>
-    <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/LakeDaylight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/BeachTwilight.jpg</to>
-  </transition>
-  <static>
-    <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/LakeTwilight.jpg</file>
-  </static>
-  <transition>
-    <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/LakeTwilight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/MountainNight.jpg</to>
+    <from>.local/share/backgrounds/google-now/BeachTwilight.jpg</from>
+    <to>.local/share/backgrounds/google-now/LakeNight.jpg</to>
   </transition>
 
 
@@ -89,79 +49,39 @@
 
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/MountainNight.jpg</file>
+    <file>.local/share/backgrounds/google-now/LakeNight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/MountainNight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/MountainDawn.jpg</to>
+    <from>.local/share/backgrounds/google-now/LakeNight.jpg</from>
+    <to>.local/share/backgrounds/google-now/LakeDawn.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/MountainDawn.jpg</file>
+    <file>.local/share/backgrounds/google-now/LakeDawn.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/MountainDawn.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/MountainDaylight.jpg</to>
+    <from>.local/share/backgrounds/google-now/LakeDawn.jpg</from>
+    <to>.local/share/backgrounds/google-now/LakeDaylight.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/MountainDaylight.jpg</file>
+    <file>.local/share/backgrounds/google-now/LakeDaylight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/MountainDaylight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/MountainTwilight.jpg</to>
+    <from>.local/share/backgrounds/google-now/LakeDaylight.jpg</from>
+    <to>.local/share/backgrounds/google-now/BeachTwilight.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/MountainTwilight.jpg</file>
+    <file>.local/share/backgrounds/google-now/LakeTwilight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/MountainTwilight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/BerlinNight.jpg</to>
-  </transition>
-
-
-
-
-  <static>
-    <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/BerlinNight.jpg</file>
-  </static>
-  <transition>
-    <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/BerlinNight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/BerlinDawn.jpg</to>
-  </transition>
-  <static>
-    <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/BerlinDawn.jpg</file>
-  </static>
-  <transition>
-    <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/BerlinDawn.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/BerlinDaylight.jpg</to>
-  </transition>
-  <static>
-    <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/BerlinDaylight.jpg</file>
-  </static>
-  <transition>
-    <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/BerlinDaylight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/BerlinTwilight.jpg</to>
-  </transition>
-  <static>
-    <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/BerlinTwilight.jpg</file>
-  </static>
-  <transition>
-    <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/BerlinTwilight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/AustinNight.jpg</to>
+    <from>.local/share/backgrounds/google-now/LakeTwilight.jpg</from>
+    <to>.local/share/backgrounds/google-now/MountainNight.jpg</to>
   </transition>
 
 
@@ -169,39 +89,39 @@
 
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/AustinNight.jpg</file>
+    <file>.local/share/backgrounds/google-now/MountainNight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/AustinNight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/AustinDawn.jpg</to>
+    <from>.local/share/backgrounds/google-now/MountainNight.jpg</from>
+    <to>.local/share/backgrounds/google-now/MountainDawn.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/AustinDawn.jpg</file>
+    <file>.local/share/backgrounds/google-now/MountainDawn.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/AustinDawn.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/AustinDaylight.jpg</to>
+    <from>.local/share/backgrounds/google-now/MountainDawn.jpg</from>
+    <to>.local/share/backgrounds/google-now/MountainDaylight.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/AustinDaylight.jpg</file>
+    <file>.local/share/backgrounds/google-now/MountainDaylight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/AustinDaylight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/AustinTwilight.jpg</to>
+    <from>.local/share/backgrounds/google-now/MountainDaylight.jpg</from>
+    <to>.local/share/backgrounds/google-now/MountainTwilight.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/AustinTwilight.jpg</file>
+    <file>.local/share/backgrounds/google-now/MountainTwilight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/AustinTwilight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/CityNight.jpg</to>
+    <from>.local/share/backgrounds/google-now/MountainTwilight.jpg</from>
+    <to>.local/share/backgrounds/google-now/BerlinNight.jpg</to>
   </transition>
 
 
@@ -209,38 +129,118 @@
 
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/CityNight.jpg</file>
+    <file>.local/share/backgrounds/google-now/BerlinNight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/CityNight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/CityDawn.jpg</to>
+    <from>.local/share/backgrounds/google-now/BerlinNight.jpg</from>
+    <to>.local/share/backgrounds/google-now/BerlinDawn.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/CityDawn.jpg</file>
+    <file>.local/share/backgrounds/google-now/BerlinDawn.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/CityDawn.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/CityDaylight.jpg</to>
+    <from>.local/share/backgrounds/google-now/BerlinDawn.jpg</from>
+    <to>.local/share/backgrounds/google-now/BerlinDaylight.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/CityDaylight.jpg</file>
+    <file>.local/share/backgrounds/google-now/BerlinDaylight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/CityDaylight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/CityTwilight.jpg</to>
+    <from>.local/share/backgrounds/google-now/BerlinDaylight.jpg</from>
+    <to>.local/share/backgrounds/google-now/BerlinTwilight.jpg</to>
   </transition>
   <static>
     <duration>21595.0</duration>
-    <file>/home/pauloelr/.local/share/backgrounds/google-now/CityTwilight.jpg</file>
+    <file>.local/share/backgrounds/google-now/BerlinTwilight.jpg</file>
   </static>
   <transition>
     <duration>5.0</duration>
-    <from>/home/pauloelr/.local/share/backgrounds/google-now/CityTwilight.jpg</from>
-    <to>/home/pauloelr/.local/share/backgrounds/google-now/BeachNight.jpg</to>
+    <from>.local/share/backgrounds/google-now/BerlinTwilight.jpg</from>
+    <to>.local/share/backgrounds/google-now/AustinNight.jpg</to>
+  </transition>
+
+
+
+
+  <static>
+    <duration>21595.0</duration>
+    <file>.local/share/backgrounds/google-now/AustinNight.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>.local/share/backgrounds/google-now/AustinNight.jpg</from>
+    <to>.local/share/backgrounds/google-now/AustinDawn.jpg</to>
+  </transition>
+  <static>
+    <duration>21595.0</duration>
+    <file>.local/share/backgrounds/google-now/AustinDawn.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>.local/share/backgrounds/google-now/AustinDawn.jpg</from>
+    <to>.local/share/backgrounds/google-now/AustinDaylight.jpg</to>
+  </transition>
+  <static>
+    <duration>21595.0</duration>
+    <file>.local/share/backgrounds/google-now/AustinDaylight.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>.local/share/backgrounds/google-now/AustinDaylight.jpg</from>
+    <to>.local/share/backgrounds/google-now/AustinTwilight.jpg</to>
+  </transition>
+  <static>
+    <duration>21595.0</duration>
+    <file>.local/share/backgrounds/google-now/AustinTwilight.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>.local/share/backgrounds/google-now/AustinTwilight.jpg</from>
+    <to>.local/share/backgrounds/google-now/CityNight.jpg</to>
+  </transition>
+
+
+
+
+  <static>
+    <duration>21595.0</duration>
+    <file>.local/share/backgrounds/google-now/CityNight.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>.local/share/backgrounds/google-now/CityNight.jpg</from>
+    <to>.local/share/backgrounds/google-now/CityDawn.jpg</to>
+  </transition>
+  <static>
+    <duration>21595.0</duration>
+    <file>.local/share/backgrounds/google-now/CityDawn.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>.local/share/backgrounds/google-now/CityDawn.jpg</from>
+    <to>.local/share/backgrounds/google-now/CityDaylight.jpg</to>
+  </transition>
+  <static>
+    <duration>21595.0</duration>
+    <file>.local/share/backgrounds/google-now/CityDaylight.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>.local/share/backgrounds/google-now/CityDaylight.jpg</from>
+    <to>.local/share/backgrounds/google-now/CityTwilight.jpg</to>
+  </transition>
+  <static>
+    <duration>21595.0</duration>
+    <file>.local/share/backgrounds/google-now/CityTwilight.jpg</file>
+  </static>
+  <transition>
+    <duration>5.0</duration>
+    <from>.local/share/backgrounds/google-now/CityTwilight.jpg</from>
+    <to>.local/share/backgrounds/google-now/BeachNight.jpg</to>
   </transition>
 </background>
