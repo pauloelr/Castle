@@ -24,6 +24,5 @@ bash-it enable plugin dirs
 bash-it enable plugin extract
 bash-it enable plugin git
 bash-it enable plugin javascript
-bash-it enable plugin node
 bash-it enable plugin ssh
 bash-it enable plugin vagrant
