@@ -17,7 +17,7 @@ function psyco_scm_prompt {
                 SCM_PROMPT+="${SCM_THEME_PROMPT_DIRTY_COLOR}"
             fi
         else
-            SCM_PROMPT="${SCM_THEME_PROMPT_CLEAN_COLOR}"
+            SCM_PROMPT+="${SCM_THEME_PROMPT_CLEAN_COLOR}"
         fi
 
         # If SCM is GIT
