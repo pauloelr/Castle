@@ -59,8 +59,3 @@ else
     reset="\033[m"
     blue="\033[34m"
 fi
-
-SCM_THEME_PROMPT_CLEAN_COLOR=${green}
-SCM_THEME_PROMPT_DIRTY_COLOR=${magenta}
-SCM_THEME_PROMPT_STAGED_COLOR=${yellow}
-SCM_THEME_PROMPT_UNTRACKED_COLOR=${purple}
