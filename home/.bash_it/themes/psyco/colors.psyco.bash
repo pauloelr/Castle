@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
-        export TERM=gnome-256color
+    export TERM=gnome-256color
 elif [[ $TERM != dumb ]] && infocmp xterm-256color >/dev/null 2>&1; then
-        export TERM=xterm-256color
+    export TERM=xterm-256color
 fi
 
 if tput setaf 1 &> /dev/null; then
-    tput sgr0
     if [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
         red=$(tput setaf 9)      
         magenta=$(tput setaf 198)

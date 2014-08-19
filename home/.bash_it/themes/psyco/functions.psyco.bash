@@ -37,9 +37,9 @@ function command_status(){
     exit_code=$?
 
     if [ $exit_code != 0 ]; then
-        last_command="\[${reset}${bold}${red}\]✗ $exit_code "
+        last_command="\[${bold}${red}\]✗ $exit_code"
     else
-        last_command="\[${reset}${bold}${green}\]✓ "
+        last_command="\[${bold}${green}\]✓"
     fi
 }
 
