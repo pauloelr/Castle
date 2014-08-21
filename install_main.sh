@@ -9,8 +9,8 @@ ppa:teejee2008/ppa
 ppa:thefanclub/grive-tools
 ppa:chris-lea/node.js"
 
-PACKAGES="apache2 
-chromium-browser 
+PACKAGES="apache2
+chromium-browser
 chromium-browser-l10n
 compizconfig-settings-manager
 conky
@@ -85,7 +85,7 @@ for NPM_PACKAGE in $NPM_PACKAGES; do
 	eval "$NPM_CMD $NPM_PACKAGE"
 done
 
-cd ~ 
+cd ~
 echo '[Install] Instaling Composer'
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
