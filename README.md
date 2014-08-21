@@ -3,21 +3,41 @@ Pauloelr/Castle
 
 My collection of dotfiles, maintained through [homesick](https://github.com/technicalpickles/homesick).
 
-Installation
-------------
+Complete Installation
+---------------------
 
-Install homesick first
+```sh
+wget -O - https://github.com/pauloelr/Castle/blob/master/install_main.sh | bash
+```
 
-    gem install homesick
+Homesick Installation
+---------------------
 
-Clone the Castle repository
+```sh
+wget -O - https://github.com/pauloelr/Castle/blob/master/install_user.sh | bash
+```
 
-    homesick clone pauloelr/Castle
+Standalone Instalation
+----------------------
 
-Then symlink the Castle to your home directory
+If you just want to clone this Castle with homesick do the following
 
-    homesick symlink Castle
+```sh
+# Clone Bash-it (if you did not clone yet)
+git clone https://github.com/revans/bash-it.git ~/.bash_it
 
+# Install homesick first (if you did not install yet)
+gem install homesick
+
+# Clone the Castle repository
+homesick clone pauloelr/Castle
+
+# Symlink the Castle to your home directory
+homesick symlink Castle
+
+# You can also enable plugins by running
+wget -O - https://github.com/pauloelr/Castle/blob/master/enable_bash.sh | bash
+```
 
 Thanks
 ------

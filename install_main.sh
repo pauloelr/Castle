@@ -97,4 +97,5 @@ echo '[Install] Instaling Homesick'
 sudo gem install homesick
 
 cd $DIR
-source ./install_user.sh
+
+wget -O - https://raw.githubusercontent.com/pauloelr/Castle/master/install_user.sh | bash
