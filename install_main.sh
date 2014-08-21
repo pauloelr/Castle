@@ -98,4 +98,4 @@ sudo gem install homesick
 
 cd $DIR
 
-wget -O - https://raw.githubusercontent.com/pauloelr/Castle/master/install_user.sh | bash
+curl https://raw.github.com/pauloelr/Castle/master/install_user.sh | bash
