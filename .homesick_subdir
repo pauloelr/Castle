@@ -7,3 +7,4 @@
 .local/share/backgrounds
 .local/share/fonts
 .conky
+.vim/plugin/vimrc
