@@ -1,8 +1,4 @@
 #!/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-cd ~ 
-
 REPOSITORIES="ppa:libreoffice/ppa
 ppa:numix/ppa
 ppa:thefanclub/grive-tools
@@ -89,13 +85,12 @@ for NPM_PACKAGE in $NPM_PACKAGES; do
 	eval "$NPM_CMD $NPM_PACKAGE"
 done
 
+cd ~ 
 echo '[Install] Instaling Composer'
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
 echo '[Install] Instaling Homesick'
 sudo gem install homesick
-
-cd $DIR
 
 source <(wget -qO- https://raw.github.com/pauloelr/Castle/master/install_user.sh)

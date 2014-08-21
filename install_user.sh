@@ -15,6 +15,8 @@ source <(wget -qO- https://raw.github.com/pauloelr/Castle/master/enable_bashit.s
 
 if [ -e "~/.composer/composer.json" ]; then
     command -v composer >/dev/null 2>&1 || { \
+    	cd ~  \
+		echo '[Install] Instaling Composer' \
         curl -sS https://getcomposer.org/installer | php; \
         sudo mv composer.phar /usr/local/bin/composer; \
     }
