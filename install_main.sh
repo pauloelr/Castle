@@ -55,47 +55,47 @@ y-ppa-manager"
 
 NPM_PACKAGES="bower"
 
-INSTALL_CMD="sudo apt-get install -y";
+INSTALL_CMD="sudo apt-get install -y"
 for PACKAGE in $PACKAGES; do
-	INSTALL_CMD="$INSTALL_CMD $PACKAGE";
+	INSTALL_CMD="$INSTALL_CMD $PACKAGE"
 done
 
-echo '[Install] Updating Package List';
-sudo apt-get update;
+echo '[Install] Updating Package List'
+sudo apt-get update
 
-echo '[Install] Upgrading Packages';
-sudo apt-get dist-upgrade -y;
+echo '[Install] Upgrading Packages'
+sudo apt-get dist-upgrade -y
 
-echo '[Install] Adicionando Repositórios';
-REPOSITORIES_CMD="sudo add-apt-repository -y";
+echo '[Install] Adicionando Repositórios'
+REPOSITORIES_CMD="sudo add-apt-repository -y"
 for REPOSITORY in $REPOSITORIES; do
-	eval "$REPOSITORIES_CMD $REPOSITORY";
+	eval "$REPOSITORIES_CMD $REPOSITORY"
 done
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -;
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list';
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 
-echo '[Install] Updating Package List';
-sudo apt-get update;
+echo '[Install] Updating Package List'
+sudo apt-get update
 
-echo '[Install] Instaling Packages';
-eval $INSTALL_CMD;
+echo '[Install] Instaling Packages'
+eval $INSTALL_CMD
 
-echo '[Install] Reloading Bash';
-source ~/.bashrc;
+echo '[Install] Reloading Bash'
+source ~/.bashrc
 
-echo '[Install] NPM Packages';
-NPM_CMD="sudo npm install -g -s";
+echo '[Install] NPM Packages'
+NPM_CMD="sudo npm install -g -s"
 for NPM_PACKAGE in $NPM_PACKAGES; do
-	eval "$NPM_CMD $NPM_PACKAGE";
+	eval "$NPM_CMD $NPM_PACKAGE"
 done
 
-echo '[Install] Instaling Composer';
-curl -sS https://getcomposer.org/installer | php;
-sudo mv composer.phar /usr/local/bin/composer;
+echo '[Install] Instaling Composer'
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
 
-echo '[Install] Instaling Homesick';
-sudo gem install homesick;
+echo '[Install] Instaling Homesick'
+sudo gem install homesick
 
-cd $DIR;
+cd $DIR
 
-curl -s https://raw.github.com/pauloelr/Castle/master/install_user.sh | bash;
+source <(wget -qO- https://raw.github.com/pauloelr/Castle/master/install_user.sh)
