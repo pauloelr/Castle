@@ -11,7 +11,7 @@ yes y | homesick symlink Castle
 source ~/.bashrc
 
 echo '[Install] Enabling BashIt Plugins'
-wget https://raw.githubusercontent.com/pauloelr/Castle/master/enable_bashit.sh | bash
+wget -O - https://raw.githubusercontent.com/pauloelr/Castle/master/enable_bashit.sh | bash
 
 if [ -e "~/.composer/composer.json" ] then
     command -v composer >/dev/null 2>&1 || { \
