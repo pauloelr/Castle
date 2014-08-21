@@ -7,7 +7,7 @@ Complete Installation
 ---------------------
 
 ```sh
-wget -O - https://github.com/pauloelr/Castle/blob/master/install_main.sh | bash
+wget -O - https://raw.githubusercontent.com/pauloelr/Castle/master/install_main.sh | bash
 ```
 
 Note: You may be promped to enter information such as sudo password
@@ -16,7 +16,7 @@ Homesick Installation
 ---------------------
 
 ```sh
-wget -O - https://github.com/pauloelr/Castle/blob/master/install_user.sh | bash
+wget -O - https://raw.githubusercontent.com/pauloelr/Castle/master/install_user.sh | bash
 ```
 
 Note: You may be promped to enter information such as sudo password
@@ -40,7 +40,7 @@ homesick clone pauloelr/Castle
 homesick symlink Castle
 
 # You can also enable plugins by running
-wget -O - https://github.com/pauloelr/Castle/blob/master/enable_bash.sh | bash
+wget -O - https://raw.githubusercontent.com/pauloelr/Castle/master/enable_bashit.sh | bash
 ```
 
 Thanks
