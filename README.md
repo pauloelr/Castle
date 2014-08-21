@@ -10,12 +10,16 @@ Complete Installation
 wget -O - https://github.com/pauloelr/Castle/blob/master/install_main.sh | bash
 ```
 
+Note: You may be promped to enter information such as sudo password
+
 Homesick Installation
 ---------------------
 
 ```sh
 wget -O - https://github.com/pauloelr/Castle/blob/master/install_user.sh | bash
 ```
+
+Note: You may be promped to enter information such as sudo password
 
 Standalone Instalation
 ----------------------
