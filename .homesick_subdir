@@ -8,3 +8,4 @@
 .local/share/fonts
 .conky
 .vim/plugin/vimrc
+.config/fontconfig/conf.d
