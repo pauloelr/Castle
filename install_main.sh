@@ -34,6 +34,7 @@ numix-gtk-theme
 numix-icon-theme-circle
 oracle-java7-installer
 php5-cli
+php5-sqlite
 php-pear
 php5
 php5-json
