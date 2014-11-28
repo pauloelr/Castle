@@ -32,10 +32,9 @@ libreoffice-l10n-pt-br
 nodejs
 numix-gtk-theme
 numix-icon-theme-circle
-numix-icon-theme-shine
 oracle-java7-installer
 php5-cli
-php5-pear
+php-pear
 php5
 php5-json
 php5-curl
