@@ -3,7 +3,7 @@ REPOSITORIES="ppa:libreoffice/ppa
 ppa:numix/ppa
 ppa:thefanclub/grive-tools
 ppa:webupd8team/java
-ppa:webupd8team/sublime-text-2
+ppa:webupd8team/sublime-text-3
 ppa:webupd8team/y-ppa-manager
 ppa:teejee2008/ppa
 ppa:thefanclub/grive-tools
@@ -18,7 +18,7 @@ conky-manager
 curl
 firefox-locale-pt
 gimp
-git-core
+git
 gnome-tweak-tool
 google-chrome-stable
 grive
@@ -35,18 +35,21 @@ numix-icon-theme-circle
 numix-icon-theme-shine
 oracle-java7-installer
 php5-cli
+php5-pear
 php5
 php5-json
 php5-curl
 php5-xsl
 smuxi
-sublime-text
+sublime-text-installer
+subversion 
 unity-tweak-tool
 vagrant
 vim-gnome
 vim
 virtualbox
 vlc
+wget
 y-ppa-manager"
 
 NPM_PACKAGES="bower"
