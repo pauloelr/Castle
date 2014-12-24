@@ -4,4 +4,6 @@ source "${BASH_IT}/themes/psyco/base.psyco.bash"
 source "${BASH_IT}/themes/psyco/style.psyco.bash"
 source "${BASH_IT}/themes/psyco/functions.psyco.bash"
 
-PROMPT_COMMAND=prompt_command;
+if [[ -t "$fd" || -p /dev/stdin ]]; then
+	PROMPT_COMMAND=prompt_command;
+fi

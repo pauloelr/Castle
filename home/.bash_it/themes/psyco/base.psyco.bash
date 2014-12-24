@@ -23,13 +23,13 @@ else
 fi
 
 SCM_HG='hg'
-SCM_HG_CHAR=''
+SCM_HG_CHAR='☿ '
 
 SCM_SVN='svn'
 SCM_SVN_CHAR='⑆ '
 
 SCM_NONE='NONE'
-SCM_NONE_CHAR='☿ '
+SCM_NONE_CHAR=''
 
 RVM_THEME_PROMPT_PREFIX="\[${reset}${bold}${light_gray}\][ \[${reset}${bold}${purple}\]"
 RVM_THEME_PROMPT_SUFFIX="\[${reset}${bold}${light_gray}\] ] "
