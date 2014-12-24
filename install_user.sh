@@ -13,6 +13,9 @@ source ~/.bashrc
 echo '[Install] Enabling BashIt Plugins'
 source <(wget -qO- https://raw.github.com/pauloelr/Castle/master/enable_bashit.sh)
 
+echo '[Install] Installing Vundle'
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 if [ -e "~/.composer/composer.json" ]; then
     command -v composer >/dev/null 2>&1 || { \
         cd ~  \

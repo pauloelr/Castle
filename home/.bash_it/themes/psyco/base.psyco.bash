@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 THEME_PROMPT_HOST='\H'
-SCM_THEME_PROMPT_DIRTY='*'
+SCM_THEME_PROMPT_DIRTY='* '
 SCM_THEME_PROMPT_CLEAN=''
 SCM_THEME_PROMPT_PREFIX="\[${reset}${bold}${light_gray}\][ "
-SCM_THEME_PROMPT_SUFFIX="\[${reset}${bold}${light_gray}\] ] "
+SCM_THEME_PROMPT_SUFFIX="\[${reset}${bold}${light_gray}\]]"
 
 SCM_THEME_PROMPT_CLEAN_COLOR="\[${reset}${bold}${green}\]"
 SCM_THEME_PROMPT_DIRTY_COLOR="\[${reset}${bold}${magenta}\]"
@@ -26,10 +26,10 @@ SCM_HG='hg'
 SCM_HG_CHAR=''
 
 SCM_SVN='svn'
-SCM_SVN_CHAR=''
+SCM_SVN_CHAR='⑆ '
 
 SCM_NONE='NONE'
-SCM_NONE_CHAR=''
+SCM_NONE_CHAR='☿ '
 
 RVM_THEME_PROMPT_PREFIX="\[${reset}${bold}${light_gray}\][ \[${reset}${bold}${purple}\]"
 RVM_THEME_PROMPT_SUFFIX="\[${reset}${bold}${light_gray}\] ] "
