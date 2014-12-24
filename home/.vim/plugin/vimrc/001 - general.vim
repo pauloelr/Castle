@@ -1,8 +1,5 @@
 " Remap Arrows Just Over SSH
 if $SSH_CLIENT != '' || $SSH_TTY  != ''
-  echo $SSH_CLIENT
-  echo $SSH_TTY
-
   set t_ku=[A
   set t_kd=[B
   set t_kr=[C
