@@ -6,6 +6,7 @@
 .local/share/applications
 .local/share/backgrounds
 .local/share/fonts
+.local/share/icons
 .conky
 .vim/plugin/vimrc
 .config/fontconfig/conf.d
