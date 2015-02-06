@@ -91,6 +91,10 @@ sudo apt-get update
 echo '[Install] Instaling Packages'
 eval $INSTALL_CMD
 
+echo '[Install] Dropbox Installation'
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
+
 echo '[Install] Reloading Bash'
 source ~/.bashrc
 
