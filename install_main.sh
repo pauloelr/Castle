@@ -32,6 +32,7 @@ libreoffice-l10n-pt-br
 nodejs
 numix-gtk-theme
 numix-icon-theme-circle
+opera-stable
 oracle-java7-installer
 php5-cli
 php5-sqlite
@@ -70,8 +71,14 @@ REPOSITORIES_CMD="sudo add-apt-repository -y"
 for REPOSITORY in $REPOSITORIES; do
 	eval "$REPOSITORIES_CMD $REPOSITORY"
 done
+
+echo '[Install] Google Chrome Repository'
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+
+echo '[Install] Google Opera Repository'
+sudo add-apt-repository 'deb http://deb.opera.com/opera-stable/ stable non-free'
+wget -qO- http://deb.opera.com/archive.key | sudo apt-key add -
 
 echo '[Install] Updating Package List'
 sudo apt-get update
