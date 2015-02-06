@@ -42,6 +42,7 @@ php5-json
 php5-curl
 php5-xsl
 smuxi
+spotify-client
 sublime-text-installer
 subversion 
 unity-tweak-tool
@@ -77,8 +78,12 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 
 echo '[Install] Opera Repository'
-sudo add-apt-repository 'deb http://deb.opera.com/opera-stable/ stable non-free'
+sudo add-apt-repository -y 'deb http://deb.opera.com/opera-stable/ stable non-free'
 wget -qO- http://deb.opera.com/archive.key | sudo apt-key add -
+
+echo '[Install] Spotify Repository'
+sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
 
 echo '[Install] Updating Package List'
 sudo apt-get update
