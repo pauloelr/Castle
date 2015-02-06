@@ -76,7 +76,7 @@ echo '[Install] Google Chrome Repository'
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 
-echo '[Install] Google Opera Repository'
+echo '[Install] Opera Repository'
 sudo add-apt-repository 'deb http://deb.opera.com/opera-stable/ stable non-free'
 wget -qO- http://deb.opera.com/archive.key | sudo apt-key add -
 
