@@ -41,6 +41,7 @@ php-pear
 php5
 php5-json
 php5-curl
+php5-mysql
 php5-xsl
 smuxi
 spotify-client
