@@ -10,3 +10,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+if [ -f /etc/bash_completion.d/docker.io ]; then
+	. /etc/bash_completion.d/docker.io
+fi

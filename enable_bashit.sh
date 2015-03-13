@@ -7,6 +7,7 @@ bash-it enable alias general
 bash-it enable alias git
 bash-it enable alias vagrant
 bash-it enable alias vim
+bash-it enable alias docker
 
 # Completions
 bash-it enable completion bash-it
@@ -26,3 +27,4 @@ bash-it enable plugin git
 bash-it enable plugin javascript
 bash-it enable plugin ssh
 bash-it enable plugin vagrant
+bash-it enable plugin docker
