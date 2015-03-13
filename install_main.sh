@@ -16,6 +16,7 @@ compizconfig-settings-manager
 conky
 conky-manager
 curl
+dropbox
 firefox-locale-pt
 gimp
 git
@@ -40,6 +41,7 @@ php-pear
 php5
 php5-json
 php5-curl
+php5-mysql
 php5-xsl
 smuxi
 spotify-client
@@ -84,6 +86,10 @@ wget -qO- http://deb.opera.com/archive.key | sudo apt-key add -
 echo '[Install] Spotify Repository'
 sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
+
+echo '[Install] Dropbox Repository'
+sudo add-apt-repository "deb http://linux.dropbox.com/ubuntu $(lsb_release -sc) main"
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 
 echo '[Install] Updating Package List'
 sudo apt-get update
