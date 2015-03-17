@@ -9,8 +9,7 @@ ppa:teejee2008/ppa
 ppa:thefanclub/grive-tools
 ppa:chris-lea/node.js"
 
-PACKAGES="apache2
-chromium-browser
+PACKAGES="chromium-browser
 chromium-browser-l10n
 compizconfig-settings-manager
 conky
@@ -25,7 +24,6 @@ google-chrome-stable
 grive
 grive-tools
 inkscape
-libapache2-mod-php5
 libreoffice-help-en-gb
 libreoffice-help-pt-br
 libreoffice-l10n-en-gb
