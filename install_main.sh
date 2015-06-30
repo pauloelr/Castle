@@ -1,12 +1,10 @@
 #!/bin/bash
 REPOSITORIES="ppa:libreoffice/ppa
 ppa:numix/ppa
-ppa:thefanclub/grive-tools
 ppa:webupd8team/java
 ppa:webupd8team/sublime-text-3
 ppa:webupd8team/y-ppa-manager
 ppa:teejee2008/ppa
-ppa:thefanclub/grive-tools
 ppa:chris-lea/node.js"
 
 PACKAGES="chromium-browser
@@ -40,7 +38,6 @@ php5-curl
 php5-mysql
 php5-xsl
 smuxi
-spotify-client
 sublime-text-installer
 subversion 
 unity-tweak-tool
