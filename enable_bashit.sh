@@ -26,4 +26,3 @@ bash-it enable plugin git
 bash-it enable plugin javascript
 bash-it enable plugin ssh
 bash-it enable plugin vagrant
-bash-it enable plugin docker
