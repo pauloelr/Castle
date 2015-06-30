@@ -21,8 +21,6 @@ gimp
 git
 gnome-tweak-tool
 google-chrome-stable
-grive
-grive-tools
 inkscape
 libreoffice-help-en-gb
 libreoffice-help-pt-br
