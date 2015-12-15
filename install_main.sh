@@ -29,7 +29,7 @@ nodejs
 numix-gtk-theme
 numix-icon-theme-circle
 opera-stable
-oracle-java7-installer
+oracle-java8-installer
 php5-cli
 php5-sqlite
 php-pear
