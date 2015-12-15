@@ -5,15 +5,16 @@ ppa:webupd8team/java
 ppa:webupd8team/sublime-text-3
 ppa:webupd8team/y-ppa-manager
 ppa:teejee2008/ppa
-ppa:chris-lea/node.js"
+ppa:chris-lea/node.js
+ppa:webupd8team/atom"
 
-PACKAGES="chromium-browser
+PACKAGES="atom
+chromium-browser
 chromium-browser-l10n
 compizconfig-settings-manager
 conky
 conky-manager
 curl
-dropbox
 firefox-locale-pt
 gimp
 git
@@ -38,8 +39,7 @@ php5-curl
 php5-mysql
 php5-xsl
 smuxi
-sublime-text-installer
-subversion 
+subversion
 unity-tweak-tool
 vagrant
 vim-gnome
@@ -79,10 +79,6 @@ wget -qO- http://deb.opera.com/archive.key | sudo apt-key add -
 echo '[Install] Spotify Repository'
 sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
-
-echo '[Install] Dropbox Repository'
-sudo add-apt-repository "deb http://linux.dropbox.com/ubuntu $(lsb_release -sc) main"
-sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 
 echo '[Install] Updating Package List'
 sudo apt-get update
