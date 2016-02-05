@@ -1,6 +1,6 @@
 .bash_it/aliases
 .bash_it/custom
-.bash_it/themes]
+.bash_it/themes
 .config/fontconfig/conf.d
 .local/share/gnome-background-properties
 .local/share/applications
