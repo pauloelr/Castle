@@ -59,7 +59,7 @@ for PACKAGE in $PACKAGES; do
 	INSTALL_CMD="$INSTALL_CMD $PACKAGE"
 done
 
-NPM_CMD="sudo apt-get install -y"
+NPM_CMD="sudo npm install -g -s"
 for NPM_PACKAGE in $NPM_PACKAGES; do
 	NPM_CMD="$NPM_CMD $NPM_PACKAGE"
 done
