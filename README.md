@@ -10,7 +10,7 @@ Complete Installation
 source <(wget -qO- https://raw.github.com/pauloelr/Castle/master/install_main.sh)
 ```
 
-Note: You may be promped to enter information such as sudo password
+Note: You may be prompted to enter information such as sudo password
 
 Homesick Installation
 ---------------------
@@ -19,9 +19,9 @@ Homesick Installation
 source <(wget -qO- https://raw.github.com/pauloelr/Castle/master/install_user.sh)
 ```
 
-Note: You may be promped to enter information such as sudo password
+Note: You may be prompted to enter information such as sudo password
 
-Standalone Instalation
+Standalone Installation
 ----------------------
 
 If you just want to clone this Castle with homesick do the following

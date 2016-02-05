@@ -68,7 +68,8 @@ ${goto 60}${execi 300 grep "yweather:forecast" ~/.cache/weather.xml | grep -o "h
 ### Network
 ###################
 #${voffset 5}${color7}${hr}${color}${voffset 5}
-${voffset 5}${font Open Sans Light:size=11}Network ${color7}${hr 1}${color}${font Open Sans Light:size=10}${voffset 5} ${if_existing /proc/net/route wlan0}
+${voffset 5}${font Open Sans Light:size=11}Network ${color7}${hr 1}${color}${font Open Sans Light:size=10}${voffset 5}
+${if_existing /proc/net/route wlan0}
 ${color1}Up:${color} ${color3}${upspeed wlan0}${color}${alignr}${color1}Down:${color} ${color3}${downspeed wlan0}${color}
 ${color8}${upspeedgraph wlan0 50,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph wlan0 50,120 FF8800 FF8800}
 ${color1}Sent:${color} ${color2}${totalup wlan0}${color}${alignr}${color1}Received:${color} ${color2}${totaldown wlan0}${color}
@@ -76,6 +77,10 @@ ${else}${if_existing /proc/net/route wlan1}
 ${color1}Up:${color} ${color3}${upspeed wlan1}${color}${alignr}${color1}Down:${color} ${color3}${downspeed wlan1}${color}
 ${color8}${upspeedgraph wlan1 50,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph wlan1 50,120 FF8800 FF8800}
 ${color1}Sent:${color} ${color2}${totalup wlan1}${color}${alignr}${color1}Received:${color} ${color2}${totaldown wlan1}${color}
+${else}${if_existing /proc/net/route wlp2s0}
+${color1}Up:${color} ${color3}${upspeed wlp2s0}${color}${alignr}${color1}Down:${color} ${color3}${downspeed wlp2s0}${color}
+${color8}${upspeedgraph wlp2s0 50,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph wlp2s0 50,120 FF8800 FF8800}
+${color1}Sent:${color} ${color2}${totalup wlp2s0}${color}${alignr}${color1}Received:${color} ${color2}${totaldown wlp2s0}${color}
 ${else}${if_existing /proc/net/route eth0}
 ${color1}Up:${color} ${color3}${upspeed eth0}${color}${alignr}${color1}Down:${color} ${color3}${downspeed eth0}${color}
 ${color8}${upspeedgraph eth0 50,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph eth0 50,120 FF8800 FF8800}
