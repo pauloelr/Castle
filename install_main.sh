@@ -1,11 +1,11 @@
 #!/bin/bash
+# ppa:teejee2008/ppa = conky-manager
 REPOSITORIES="ppa:libreoffice/ppa
 ppa:numix/ppa
 ppa:webupd8team/java
 ppa:webupd8team/sublime-text-3
 ppa:webupd8team/y-ppa-manager
 ppa:teejee2008/ppa
-ppa:chris-lea/node.js
 ppa:webupd8team/atom"
 
 PACKAGES="atom
@@ -20,6 +20,7 @@ gimp
 git
 gnome-tweak-tool
 google-chrome-stable
+guake
 inkscape
 libreoffice-help-en-gb
 libreoffice-help-pt-br
@@ -38,7 +39,9 @@ php5-json
 php5-curl
 php5-mysql
 php5-xsl
+psensor
 smuxi
+spotify-client
 subversion
 unity-tweak-tool
 vagrant
@@ -55,6 +58,12 @@ INSTALL_CMD="sudo apt-get install -y"
 for PACKAGE in $PACKAGES; do
 	INSTALL_CMD="$INSTALL_CMD $PACKAGE"
 done
+
+NPM_CMD="sudo apt-get install -y"
+for NPM_PACKAGE in $NPM_PACKAGES; do
+	NPM_CMD="$NPM_CMD $NPM_PACKAGE"
+done
+
 
 echo '[Install] Updating Package List'
 sudo apt-get update
@@ -77,8 +86,11 @@ sudo add-apt-repository -y 'deb http://deb.opera.com/opera-stable/ stable non-fr
 wget -qO- http://deb.opera.com/archive.key | sudo apt-key add -
 
 echo '[Install] Spotify Repository'
-sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
+
+echo '[Install] Nodejs 5.x Repository'
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 
 echo '[Install] Updating Package List'
 sudo apt-get update
@@ -90,10 +102,7 @@ echo '[Install] Reloading Bash'
 source ~/.bashrc
 
 echo '[Install] NPM Packages'
-NPM_CMD="sudo npm install -g -s"
-for NPM_PACKAGE in $NPM_PACKAGES; do
-	eval "$NPM_CMD $NPM_PACKAGE"
-done
+eval $NPM_CMD
 
 cd ~
 echo '[Install] Instaling Composer'

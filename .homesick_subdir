@@ -1,12 +1,13 @@
 .bash_it/aliases
 .bash_it/custom
-.bash_it/themes
-.composer
+.bash_it/themes]
+.config/fontconfig/conf.d
 .local/share/gnome-background-properties
 .local/share/applications
 .local/share/backgrounds
 .local/share/fonts
 .local/share/icons
-.conky
 .vim/plugin/vimrc
-.config/fontconfig/conf.d
+.conky
+.composer
+.ssh
