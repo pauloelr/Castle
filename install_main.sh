@@ -12,7 +12,7 @@ PACKAGES="atom
 chromium-browser
 chromium-browser-l10n
 compizconfig-settings-manager
-conky
+conky-all
 conky-manager
 curl
 firefox-locale-pt
