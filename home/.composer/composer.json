@@ -2,14 +2,14 @@
     "require": {
         "phpunit/phpunit": "*",
         "phploc/phploc": "*",
-        "pdepend/pdepend": "1.*",
-        "phpmd/phpmd": "1.4.*",
+        "pdepend/pdepend": "*",
+        "phpmd/phpmd": "*",
         "squizlabs/php_codesniffer": "*",
         "sebastian/phpcpd": "*",
-        "fabpot/php-cs-fixer": "dev-master",
+        "fabpot/php-cs-fixer": "*",
 
-        "behat/behat": "2.4.*@stable",
-        "behat/mink": "1.4.*@stable",
+        "behat/behat": "*",
+        "behat/mink": "*",
         "behat/mink-extension": "*",
         "behat/mink-goutte-driver": "*",
         "behat/mink-selenium2-driver": "*"
