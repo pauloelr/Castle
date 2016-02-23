@@ -67,35 +67,34 @@ ${goto 60}${execi 300 grep "yweather:forecast" ~/.cache/weather.xml | grep -o "h
 ###################
 ### Network
 ###################
-#${voffset 5}${color7}${hr}${color}${voffset 5}
-${voffset 5}${font Open Sans Light:size=11}Network ${color7}${hr 1}${color}${font Open Sans Light:size=10}${voffset 5}
+${voffset 5}${font Open Sans Light:size=11}Network ${color7}${hr 1}${color}${font Open Sans Light:size=10}${voffset -15}
 ${if_existing /proc/net/route wlan0}
 ${color1}Up:${color} ${color3}${upspeed wlan0}${color}${alignr}${color1}Down:${color} ${color3}${downspeed wlan0}${color}
-${color8}${upspeedgraph wlan0 50,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph wlan0 50,120 FF8800 FF8800}
+${color8}${upspeedgraph wlan0 22,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph wlan0 22,120 FF8800 FF8800}
 ${color1}Sent:${color} ${color2}${totalup wlan0}${color}${alignr}${color1}Received:${color} ${color2}${totaldown wlan0}${color}
 ${else}${if_existing /proc/net/route wlan1}
 ${color1}Up:${color} ${color3}${upspeed wlan1}${color}${alignr}${color1}Down:${color} ${color3}${downspeed wlan1}${color}
-${color8}${upspeedgraph wlan1 50,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph wlan1 50,120 FF8800 FF8800}
+${color8}${upspeedgraph wlan1 22,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph wlan1 22,120 FF8800 FF8800}
 ${color1}Sent:${color} ${color2}${totalup wlan1}${color}${alignr}${color1}Received:${color} ${color2}${totaldown wlan1}${color}
 ${else}${if_existing /proc/net/route wlp2s0}
 ${color1}Up:${color} ${color3}${upspeed wlp2s0}${color}${alignr}${color1}Down:${color} ${color3}${downspeed wlp2s0}${color}
-${color8}${upspeedgraph wlp2s0 50,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph wlp2s0 50,120 FF8800 FF8800}
+${color8}${upspeedgraph wlp2s0 22,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph wlp2s0 22,120 FF8800 FF8800}
 ${color1}Sent:${color} ${color2}${totalup wlp2s0}${color}${alignr}${color1}Received:${color} ${color2}${totaldown wlp2s0}${color}
 ${else}${if_existing /proc/net/route eth0}
 ${color1}Up:${color} ${color3}${upspeed eth0}${color}${alignr}${color1}Down:${color} ${color3}${downspeed eth0}${color}
-${color8}${upspeedgraph eth0 50,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph eth0 50,120 FF8800 FF8800}
+${color8}${upspeedgraph eth0 22,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph eth0 22,120 FF8800 FF8800}
 ${color1}Sent:${color} ${color2}${totalup eth0}${color}${alignr}${color1}Received:${color} ${color2}${totaldown eth0}${color}
 ${else}${if_existing /proc/net/route eth1}
 ${color1}Up:${color} ${color3}${upspeed eth1}${color}${alignr}${color1}Down:${color} ${color3}${downspeed eth1}${color}
-${color8}${upspeedgraph eth1 50,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph eth1 50,120 FF8800 FF8800}
+${color8}${upspeedgraph eth1 22,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph eth1 22,120 FF8800 FF8800}
 ${color1}Sent:${color} ${color2}${totalup eth1}${color}${alignr}${color1}Received:${color} ${color2}${totaldown eth1}${color}
 ${else}${if_existing /proc/net/route ppp0}
 ${color1}Up:${color} ${color3}${upspeed ppp0}${color}${alignr}${color1}Down:${color} ${color3}${downspeed ppp0}${color}
-${color8}${upspeedgraph ppp0 50,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph ppp0 50,120 FF8800 FF8800}
+${color8}${upspeedgraph ppp0 22,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph ppp0 22,120 FF8800 FF8800}
 ${color1}Sent:${color} ${color2}${totalup ppp0}${color}${alignr}${color1}Received:${color} ${color2}${totaldown ppp0}${color}
 ${else}${if_existing /proc/net/route ppp1}
 ${color1}Up:${color} ${color3}${upspeed ppp1}${color}${alignr}${color1}Down:${color} ${color3}${downspeed ppp1}${color}
-${color8}${upspeedgraph ppp1 50,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph ppp1 50,120 FF8800 FF8800}
+${color8}${upspeedgraph ppp1 22,120 FF8800 FF8800}${alignr}${color8}${downspeedgraph ppp1 22,120 FF8800 FF8800}
 ${color1}Sent:${color} ${color2}${totalup ppp1}${color}${alignr}${color1}Received:${color} ${color2}${totaldown ppp1}${color}
 ${else}${if_existing /proc/net/route usb0}
 ${color1}Up:${color} ${color3}${upspeed usb0}${color}${alignr}${color1}Down:${color} ${color3}${downspeed usb0}${color}
@@ -143,9 +142,13 @@ ${color1}${swapbar}${color}
 ###################
 #${voffset 5}${color7}${hr}${color}${voffset 5}
 ${voffset 5}${font Open Sans Light:size=11}Processor ${color7}${hr 1}${color}${font Open Sans Light:size=10}${voffset 5}
-${color}Avg: ${color1} ${freq_g}Ghz ${color3}${cpu cpu0}% $alignr ${color}Proc:${color1} $processes ${color}Run: ${color3} $running_processes
-${color8}${cpugraph cpu0 30,250 ff8800 ff8800}
-${color}Core 1: ${color3}${cpu cpu1}% $alignr ${color}Core 2: ${color3}${cpu cpu2}%
-${color8}${cpugraph cpu1 30,120 ff8800 ff8800} $alignr ${color8}${cpugraph cpu2 30,120 ff8800 ff8800}
-${color}Core 3: ${color3}${cpu cpu3}% $alignr ${color}Core 4: ${color3}${cpu cpu4}%
-${color8}${cpugraph cpu3 30,120 ff8800 ff8800} $alignr ${color8}${cpugraph cpu4 30,120 ff8800 ff8800}${voffset -30}
+${color}Avg: ${color1} ${freq_g}Ghz ${color3}${cpu cpu0}% $alignr ${color}Proc:${color1} $processes ${color}Run: ${color3} $running_processes${voffset -5}
+${color8}${cpugraph cpu0 22,250 ff8800 ff8800}${voffset -5}
+${color}Core 1: ${color3}${cpu cpu1}% $alignr ${color}Core 2: ${color3}${cpu cpu2}%${voffset -5}
+${color8}${cpugraph cpu1 22,120 ff8800 ff8800} $alignr ${color8}${cpugraph cpu2 22,120 ff8800 ff8800}${voffset -5}
+${color}Core 3: ${color3}${cpu cpu3}% $alignr ${color}Core 4: ${color3}${cpu cpu4}%${voffset -5}
+${color8}${cpugraph cpu3 22,120 ff8800 ff8800} $alignr ${color8}${cpugraph cpu4 22,120 ff8800 ff8800}${voffset -5}
+${color}Core 5: ${color3}${cpu cpu5}% $alignr ${color}Core 6: ${color3}${cpu cpu6}%${voffset -5}
+${color8}${cpugraph cpu5 22,120 ff8800 ff8800} $alignr ${color8}${cpugraph cpu6 22,120 ff8800 ff8800}${voffset -5}
+${color}Core 7: ${color3}${cpu cpu7}% $alignr ${color}Core 8: ${color3}${cpu cpu8}%${voffset -5}
+${color8}${cpugraph cpu7 22,120 ff8800 ff8800} $alignr ${color8}${cpugraph cpu8 22,120 ff8800 ff8800}${voffset -30}
