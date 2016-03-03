@@ -107,7 +107,7 @@ ${color1}Sent:${color} ${color2}${totalup usb1}${color}${alignr}${color1}Receive
 ${else}
 Network Disconnected
 ${color6}Connect to a network to see statistics${color}
-${voffset 50}
+${voffset 20}
 ${endif}${endif}${endif}${endif}${endif}${endif}${endif}${endif}${voffset -15}
 ###################
 ### System
