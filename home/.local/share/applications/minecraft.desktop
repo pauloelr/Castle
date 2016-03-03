@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Minecraft
+GenericName=Minecraft
+X-GNOME-FullName=Minecraft
+Comment=Minecraft Launcher
+Exec=java -Xmx1G -Xms512M -cp /opt/Minecraft/Minecraft.jar net.minecraft.bootstrap.Bootstrap
+Terminal=false
+Icon=minecraft
+Type=Application
+Categories=Games;
