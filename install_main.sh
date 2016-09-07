@@ -64,7 +64,6 @@ for NPM_PACKAGE in $NPM_PACKAGES; do
 	NPM_CMD="$NPM_CMD $NPM_PACKAGE"
 done
 
-
 echo '[Install] Updating Package List'
 sudo apt-get update
 
