@@ -31,14 +31,14 @@ numix-gtk-theme
 numix-icon-theme-circle
 opera-stable
 oracle-java8-installer
-php5-cli
-php5-sqlite
+php7.0-cli
+php7.0-sqlite
 php-pear
-php5
-php5-json
-php5-curl
-php5-mysql
-php5-xsl
+php7.0
+php7.0-json
+php7.0-curl
+php7.0-mysql
+php7.0-xsl
 psensor
 smuxi
 spotify-client
@@ -88,8 +88,8 @@ echo '[Install] Spotify Repository'
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
 
-echo '[Install] Nodejs 5.x Repository'
-curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+echo '[Install] Nodejs 6.x Repository'
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 echo '[Install] Updating Package List'
 sudo apt-get update
