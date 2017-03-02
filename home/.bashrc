@@ -56,3 +56,7 @@ export SCM_CHECK=true
 
 # Load Bash It
 source $BASH_IT/bash_it.sh
+
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=/home/pauloelr/Projetos
+export PATH=$PATH:$GOPATH/bin

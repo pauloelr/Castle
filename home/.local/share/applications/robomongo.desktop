@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=RoboMongo
+Icon=robomongo
+Exec="/opt/robomongo/bin/robomongo"
+Comment=RoboMongo
+Categories=Development;IDE;
+Terminal=false
