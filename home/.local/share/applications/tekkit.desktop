@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Tekkit
+GenericName=Tekkit
+X-GNOME-FullName=Tekkit
+Comment=Tekkit Launcher
+Exec=java -jar /opt/tekkit/tekkit.jar
+Terminal=false
+Icon=minecraft
+Type=Application
+Categories=Games;

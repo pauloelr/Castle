@@ -6,6 +6,14 @@ vendor/
 private/
 data/
 .vagrant/
+logs/
+
+#################
+## EasyTaxi
+#################
+
+puphpet/
+Vagrantfile
 
 #################
 ## Eclipse
