@@ -1,20 +1,25 @@
 #!/bin/bash
 # ppa:teejee2008/ppa = conky-manager
+# ppa:pi-rho/dev= tmux
 REPOSITORIES="ppa:libreoffice/ppa
 ppa:numix/ppa
 ppa:webupd8team/java
 ppa:webupd8team/sublime-text-3
 ppa:webupd8team/y-ppa-manager
 ppa:teejee2008/ppa
-ppa:webupd8team/atom"
+ppa:webupd8team/atom
+ppa:pi-rho/dev"
 
-PACKAGES="atom
+PACKAGES="apt-transport-https
+atom
+ca-certificates
 chromium-browser
 chromium-browser-l10n
 compizconfig-settings-manager
 conky-all
 conky-manager
 curl
+docker-engine
 firefox-locale-pt
 gimp
 git
@@ -40,9 +45,11 @@ php7.0-curl
 php7.0-mysql
 php7.0-xsl
 psensor
+software-properties-common
 smuxi
 spotify-client
 subversion
+tmux-next
 unity-tweak-tool
 vagrant
 vim-gnome
@@ -75,6 +82,10 @@ REPOSITORIES_CMD="sudo add-apt-repository -y"
 for REPOSITORY in $REPOSITORIES; do
 	eval "$REPOSITORIES_CMD $REPOSITORY"
 done
+
+echo '[Install] Docker Repository'
+curl -fsSL https://apt.dockerproject.org/gpg | sudo apt-key add -
+sudo add-apt-repository -y "deb https://apt.dockerproject.org/repo/ ubuntu-$(lsb_release -cs) main"
 
 echo '[Install] Google Chrome Repository'
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -110,5 +121,12 @@ sudo mv composer.phar /usr/local/bin/composer
 
 echo '[Install] Instaling Homesick'
 sudo gem install homesick
+
+echo '[Install] Installing Docker Compose and Machine'
+sudo curl -L https://github.com/docker/compose/releases/download/1.11.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo curl -L https://github.com/docker/machine/releases/download/v0.9.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine
+sudo chmod +x /tmp/docker-machine
+sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
 
 source <(wget -qO- https://raw.github.com/pauloelr/Castle/master/install_user.sh)

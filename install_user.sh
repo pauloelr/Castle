@@ -31,4 +31,7 @@ fi
 #echo '[Install] Change Theme'
 #sed -i "s/export BASH_IT_THEME=.*/export BASH_IT_THEME='psyco_server'/" ~/.homesick/repos/Castle/home/.bash_profile
 
+echo '[Install] Adding Docker to User Group'
+sudo usermod -aG docker $(id -u -n)
+
 echo '[Install] Installation Finished'
