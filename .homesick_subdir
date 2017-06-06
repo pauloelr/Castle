@@ -8,6 +8,7 @@
 .local/share/fonts
 .local/share/icons
 .vim/plugin/vimrc
+.ssh/config.d
 .conky
 .composer
 .ssh
